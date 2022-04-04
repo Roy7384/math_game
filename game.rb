@@ -16,9 +16,10 @@ class Game
     print '>'
     answer = $stdin.gets.chomp
 
-   if answer == result
+   if answer.to_i == result
      puts "#{player1.name}: YES! You are correct"
      puts score
+     puts "----- NEW TURN -----"
    else
      puts "#{player1.name}: Seriously? No!"
      puts score
