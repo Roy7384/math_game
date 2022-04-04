@@ -1,3 +1,5 @@
+require 'byebug' 
+
 class Game
   def initialize(players)
     # players array
@@ -40,6 +42,7 @@ class Game
 
     puts "----- NEW TURN -----"
     @playing = 1 - @playing
+    byebug
   end
 
 end
