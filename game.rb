@@ -25,13 +25,13 @@ class Game
      if !player1.update_live
       puts "#{player2.name} wins with a score of #{player2.lives}/3"
       puts "----- GAME OVER -----"
-      puts "Good bye"!
+      puts "Good bye!"
       exit(0)
      end
    end
 
    @players = @players.rotate
   end
-  
+
 end
 
