@@ -7,7 +7,7 @@ class Game
   end
 
   def score
-    "#{@players[0].name}: #{@players[0].lives}/3 vs #{@players[1].name}: #{@players[1].lives}/3"
+    "P1: #{@players[0].lives}/3 vs P2: #{@players[1].lives}/3"
   end
     
   def play 
