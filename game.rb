@@ -23,13 +23,13 @@ class Game
      puts "#{player1.name}: Seriously? No!"
      over_or_not = player1.update_live
      puts "#{player1.name}: #{player1.lives}/3 vs #{player2.name}: #{player2.lives}/3"
-     puts "----- NEW TURN -----"
      if over_or_not
       puts "#{player2.name} wins with a score of #{player2.lives}/3"
       puts "----- GAME OVER -----"
       puts "Good bye!"
       exit(0)
-     end
+    end
+    puts "----- NEW TURN -----"
    end
 
    @players = @players.rotate
