@@ -8,8 +8,8 @@ class Game
     num1 = rand(1..20)
     num2 = rand(1..20)
     result = num1 + num2
-    player1 = players[0]
-    player2 = players[1]
+    player1 = @players[0]
+    player2 = @players[1]
     score = "#{player1.name}: #{player1.lives}/3 vs #{player2.name}: #{player2.lives}/3"
 
     puts "#{player1.name}: What does #{num1} plus #{num2} equal?"
@@ -29,4 +29,9 @@ class Game
       exit(0)
      end
    end
+
+   @players = @players.rotate
+  end
+  
+end
 
