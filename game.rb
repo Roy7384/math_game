@@ -42,7 +42,7 @@ class Game
 
     puts "----- NEW TURN -----"
     @playing = 1 - @playing
-    byebug
+    # byebug
   end
 
 end
