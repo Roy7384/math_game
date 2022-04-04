@@ -5,8 +5,8 @@ class Player
     @lives = 3
   end
 
-  def update_live(num)
-    @lives += num
+  def update_live
+    @lives -= 1
     @lives == 0
   end
 
